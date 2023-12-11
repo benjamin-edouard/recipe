@@ -1,1 +1,64 @@
-/*# sourceMappingURL=main.css.map */
+/* Font for the menu items */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Sans&display=swap");
+/* Font for the H1 */
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+section.main-navbar, ul {
+  margin: 0;
+}
+
+section.main-navbar {
+  background-color: #1F9470;
+  height: 65px;
+}
+section.main-navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+}
+section.main-navbar li.main-navbar-items {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  list-style-type: none;
+  padding: 1rem;
+}
+section.main-navbar li.main-navbar-items img {
+  width: 40px;
+}
+section.main-navbar li:not(:first-child) {
+  display: none;
+}
+
+@media (min-width: 668px) {
+  section.main-navbar li:not(:first-child) {
+    display: block;
+    font-family: "PT Sans", "sans-serif";
+    font-size: 1.3rem;
+  }
+  section.main-navbar li:first-child {
+    display: none;
+  }
+}
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  width: 100%;
+}
+
+main section {
+  position: relative;
+  max-height: 700px;
+  overflow: hidden;
+}
+main section h1 {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 2rem;
+  font-family: "Caveat", "sans-serif";
+  font-size: 6rem;
+  text-align: center;
+  width: 100%;
+}
+main section img {
+  width: 100%;
+  aspect-ratio: auto;
+}/*# sourceMappingURL=main.css.map */

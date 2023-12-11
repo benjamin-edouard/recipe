@@ -1,0 +1,32 @@
+@import 'fonts'
+@import 'colors'
+    
+section.main-navbar, ul
+    margin: 0
+    
+section.main-navbar
+    background-color: #1F9470
+    height: 65px
+    ul
+        display: flex
+        flex-direction: row
+        justify-items: center
+    li.main-navbar-items
+        color: $white
+        cursor: pointer
+        list-style-type: none
+        padding: 1rem
+        img
+            width: 40px
+    li:not(:first-child)
+        display: none
+
+
+@media (min-width: 668px) 
+    section.main-navbar
+        li:not(:first-child)
+            display: block
+            font-family: 'PT Sans', 'sans-serif'
+            font-size: 1.3rem
+        li:first-child
+            display: none
