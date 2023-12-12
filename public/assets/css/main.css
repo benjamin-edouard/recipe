@@ -12,7 +12,6 @@ li:not(:first-child), button {
 
 section.main-navbar {
   background-color: #1F9470;
-  height: 65px;
 }
 section.main-navbar ul {
   display: flex;
@@ -26,7 +25,7 @@ section.main-navbar li.main-navbar-items {
   padding: 1rem;
 }
 section.main-navbar li.main-navbar-items img {
-  width: 40px;
+  width: 35px;
 }
 section.main-navbar li:not(:first-child) {
   display: none;
@@ -40,7 +39,7 @@ nav {
 }
 nav button {
   font-size: 1rem;
-  margin-right: 2rem;
+  margin: 0.5rem 2rem 0.5rem 0;
   background-color: #CE2C50;
   border: none;
   border-radius: 4px;
