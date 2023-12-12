@@ -1,9 +1,20 @@
 @import 'fonts'
 @import 'colors'
-    
+
+@mixin button()
+    background-color: $red
+    border: none
+    border-radius: 4px
+    color: $white
+    cursor: pointer
+    padding: 1rem
+  
 section.main-navbar, ul
     margin: 0
-    
+
+li:not(:first-child), button
+    font-family: 'PT Sans', 'sans-serif'   
+
 section.main-navbar
     background-color: #1F9470
     height: 65px
@@ -21,12 +32,20 @@ section.main-navbar
     li:not(:first-child)
         display: none
 
+nav
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    button
+        font-size: 1rem
+        margin-right: 2rem
+        @include button()
 
-@media (min-width: 668px) 
+@media screen (min-width: 800px) 
     section.main-navbar
         li:not(:first-child)
             display: block
-            font-family: 'PT Sans', 'sans-serif'
             font-size: 1.3rem
         li:first-child
             display: none
