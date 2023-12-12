@@ -22,7 +22,9 @@
                     <li class="main-navbar-items">Contact</li>
                 </ul>
 
-                <a href="#" title="Connexion"><button>Connexion</button></a>
+                {% if app.request.get('_route') != 'app_login '%}
+                    <a href="#" title="Connexion"><button>Connexion</button></a>
+                {% endif %}
             </nav>
         </section>
         {% block body %}{% endblock %}
