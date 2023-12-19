@@ -19,7 +19,7 @@
                 <ul> 
                     <li class="main-navbar-items"><img src="{{asset('assets/icons/menu-icon_128.png')}}" alt="main menu icon"></li>  
                     <li class="main-navbar-items"><a href="{{ path('app_home') }}" title="Accueil">Accueil</a></li>
-                    <li class="main-navbar-items">Contact</li>
+                    <li class="main-navbar-items"><a href="{{ path('app_login') }}" title="Connexion">Contact</a></li>
                 </ul>
 
                 {% if app.request.get('_route') != 'app_login' %}
@@ -27,6 +27,7 @@
                 {% endif %}
             </nav>
         </section>
-        {% block body %}{% endblock %}
+        {% block body %}
+        {% endblock %}
     </body>
 </html>
