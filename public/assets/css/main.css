@@ -92,6 +92,10 @@ main section img {
   width: 100%;
   aspect-ratio: auto;
 }
+main section div {
+  display: flex;
+  flex-direction: row;
+}
 main section article.illustration {
   display: none;
 }
