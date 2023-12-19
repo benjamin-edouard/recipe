@@ -68,21 +68,41 @@ body {
   width: 100%;
 }
 
+h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Caveat", "sans-serif";
+  font-size: 5rem;
+  margin: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
 main section {
   position: relative;
   max-height: 700px;
   overflow: hidden;
+  margin: 0;
 }
-main section h1 {
+main section h1.h1-banner {
   color: rgb(255, 255, 255);
   position: absolute;
   top: 2rem;
-  font-family: "Caveat", "sans-serif";
-  font-size: 6rem;
-  text-align: center;
-  width: 100%;
 }
 main section img {
   width: 100%;
   aspect-ratio: auto;
+}
+main section article.illustration {
+  display: none;
+}
+main section.section-services {
+  background-color: #1F9470;
+  margin: 0;
+}
+
+@media screen and (min-width: 800px) {
+  main section article.illustration {
+    display: block;
+    max-width: 33%;
+  }
 }/*# sourceMappingURL=main.css.map */
