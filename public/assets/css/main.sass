@@ -6,16 +6,23 @@ body
     margin: 0
     width: 100%
 
-h1
+h1, h2
     color: $white
     font-family: 'Caveat', 'sans-serif'
     font-size: 5rem
-    margin: 2rem
     text-align: center
-    width: 100%
+    margin: 0 auto
+    padding: 2rem
+    width: 90%
+
+h2
+    font-size: 4rem
+    &:last-child
+        color: black
+
 
 main
-    section
+    header
         position: relative
         max-height: 700px // Defines the maximum height to stop the images to take up too much height of the screen
         overflow: hidden
@@ -30,15 +37,44 @@ main
         div
             display: flex
             flex-direction: row
-        article.illustration
-            display: none
+
     section.section-services
         background-color: $dark-green
+        div
+            display: flex
+            flex-direction: column
+            margin: 0
+            article.content
+                color: $white
+                font-family: 'Montserrat', 'sans-serif' 
+                font-size: 1.1rem
+                line-height: 1.6rem
+                padding: 1.5rem
+            article.illustration
+                img
+                    width: 100%
+
+footer
+    background-color: $red
+    height: 50px
+    p
         margin: 0
 
 @media screen and (min-width: 800px)
+    
     main
-        section
-            article.illustration
-                display: block
-                max-width: 33%
+        section.section-services
+            div
+                flex-direction: row
+                align-items: center
+                justify-content: space-between
+                min-height: 40vh
+                article.illustration
+                    border: 1px solid red
+                    width: 40%
+                    img
+                        aspect-ratio: auto
+                        height: 100%
+                article.content
+                    border: 1px solid red
+                    width: 60%
